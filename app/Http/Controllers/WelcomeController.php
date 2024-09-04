@@ -23,4 +23,15 @@ class WelcomeController extends Controller
                 Nama : Nasywa Syafinka Widyamara <br> 
                 NIM : 2241760002 <br>
                 Halaman ke-'.$id;
-    }}
+    }
+    // public function greeting(){ 
+    //     return view('blog.hello', ['name' => 'Nasywa Syafinka W']); 
+    //     } 
+
+
+        public function greeting(){ 
+            return view('blog.hello') 
+                ->with('name','Nasywa Syafinka Widyamara') 
+                ->with('occupation','Karyawan tetap Petro Kimia Gresik'); 
+        }
+}
