@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Font modern dan elegan */
+    background-color: #f5f5f5; /* Background abu-abu muda untuk kesan elegan */
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c; /* Warna teks gelap untuk tampilan kontras */
+}
+
+.pos-container {
+    width: 85%; /* Lebar kontainer sedikit lebih besar */
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff; /* Warna putih bersih */
+    border-radius: 15px; /* Sudut membulat untuk kesan elegan */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Bayangan halus untuk kesan mewah */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #8d6e63; /* Warna teks coklat tua untuk kesan luxury */
+}
+
+h1 {
+    font-size: 48px; /* Ukuran font lebih besar untuk kesan eksklusif */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Jarak antar huruf untuk kesan premium */
+}
+
+h2 {
+    font-size: 32px; /* Ukuran font yang cukup besar */
+    margin-bottom: 25px;
+}
+
+hr {
+    border: none;
+    height: 3px; /* Garis lebih tebal untuk menonjolkan kesan mewah */
+    background-color: #d7ccc8; /* Garis coklat muda */
+    margin: 25px auto;
+    width: 75%;
+}
+
+.special-offers {
+    margin-bottom: 50px; /* Jarak bawah lebih besar untuk kesan luas */
+}
+
+.offer-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 3px solid #a1887f; /* Border coklat lembut */
+    border-radius: 12px;
+    background-color: #efebe9; /* Warna latar coklat muda yang halus */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    text-align: center;
+}
+
+.offer-details h3 {
+    font-size: 28px; /* Ukuran font lebih besar */
+    color: #6d4c41; /* Warna teks coklat lebih gelap */
+    margin-bottom: 15px;
+}
+
+.offer-details p {
+    font-size: 18px; /* Ukuran font sedang */
+    color: #5d4037; /* Warna teks lebih gelap */
+    margin-bottom: 25px;
+}
+
+.offer-details button {
+    padding: 12px 30px; /* Padding lebih besar */
+    border: none;
+    background-color: #8d6e63; /* Warna tombol coklat lembut */
+    color: white;
+    border-radius: 8px; /* Sudut sedikit lebih membulat */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.offer-details button:hover {
+    background-color: #5d4037; /* Warna tombol lebih gelap saat hover */
+    transform: scale(1.05); /* Efek zoom lebih besar saat hover */
+}
+
+.categories {
+    margin-bottom: 60px; /* Jarak margin bawah lebih besar */
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Jarak antar elemen lebih besar untuk kesan luas */
+    justify-content: center;
+}
+
+.category-card {
+    flex: 1 1 calc(30% - 20px); /* Lebar kartu lebih besar dengan jarak antar elemen */
+    background-color: #ffffff; /* Warna latar putih bersih */
+    border: 2px solid #d7ccc8; /* Border coklat muda */
+    border-radius: 12px; /* Radius lebih besar untuk kesan elegan */
+    text-align: center;
+    padding: 25px; /* Padding lebih besar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15); /* Bayangan halus */
+    max-width: 300px; /* Lebar maksimum kartu */
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Gambar dengan sudut membulat */
+    margin-bottom: 20px;
+}
+
+.category-card h3 {
+    font-size: 22px; /* Ukuran font sedikit lebih besar */
+    margin-bottom: 15px;
+    color: #8d6e63; /* Warna teks coklat lembut */
+}
+
+.category-card a {
+    text-decoration: none;
+    color: #6d4c41; /* Warna teks coklat gelap */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px); /* Efek hover naik */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih intens saat hover */
+    border-color: #a1887f; /* Border berubah menjadi coklat lembut */
+}
+
+.category-card:hover a {
+    color: #5d4037; /* Teks berubah warna saat hover */
+}
+
+.category-card:before {
+    content: "";
+    display: block;
+    height: 5px; /* Garis lebih tebal */
+    width: 60px; /* Lebar garis lebih besar */
+    background-color: #8d6e63; /* Warna garis coklat lembut */
+    margin: 0 auto 20px;
+    border-radius: 4px;
+}

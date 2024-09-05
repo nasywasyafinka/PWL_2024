@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', serif;
+    background-color: #8B4513;/* Gunakan path absolut atau relatif */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+div {
+    width: 60%;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px; /* Border radius yang lebih besar untuk kesan mewah */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat dan intens */
+}
+
+h1 {
+    font-size: 50px; /* Ukuran font lebih besar */
+    color: #c0392b; /* Warna teks merah klasik */
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Menambah spasi antar huruf */
+    font-family: 'Georgia', serif; /* Font serif klasik */
+}
+
+h2 {
+    font-size: 36px; /* Ukuran font lebih besar */
+    color: #34495e; /* Warna teks gelap */
+    margin-top: 30px;
+    text-align: left;
+    font-style: italic; /* Gaya italic untuk kesan elegan */
+}
+
+hr {
+    border: none;
+    height: 4px; /* Membuat garis lebih tebal */
+    background-color: #c0392b; /* Warna garis merah klasik */
+    margin: 30px auto;
+    width: 65%; /* Lebar garis */
+}
+
+p {
+    font-size: 20px; /* Ukuran font lebih besar */
+    line-height: 1.8; /* Spasi antar baris */
+    text-align: left;
+    color: #2c3e50; /* Warna teks elegan */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Jarak antar elemen */
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box {
+    flex: 1 1 calc(30% - 40px); /* Ukuran kotak */
+    border: 2px solid #2980b9; /* Warna border biru */
+    border-radius: 15px; /* Border radius halus */
+    padding: 40px; /* Padding besar */
+    background: linear-gradient(135deg, #fafafa, #dfe6e9); /* Gradasi lembut */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2); /* Bayangan kuat */
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.box a {
+    text-decoration: none;
+    color: #2980b9; /* Warna teks biru elegan */
+    font-size: 24px; /* Ukuran font besar */
+    font-weight: bold;
+    line-height: 1.8;
+    transition: color 0.4s ease;
+}
+
+.box:hover {
+    transform: translateY(-15px); /* Efek hover lebih intens */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25); /* Bayangan saat hover */
+}
+
+.box:hover a {
+    color: #c0392b; /* Warna teks berubah saat hover */
+}
+
+.box:before {
+    content: "";
+    display: block;
+    height: 7px; /* Tinggi garis bawah */
+    width: 70px; /* Lebar garis bawah */
+    background-color: #2980b9; /* Warna garis biru */
+    margin: 0 auto 20px;
+    border-radius: 6px;
+}

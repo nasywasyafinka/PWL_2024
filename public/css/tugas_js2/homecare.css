@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Font tetap modern */
+    background-color: #d0f0c0; /* Warna hijau telur asin */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Warna teks lebih gelap untuk kontras */
+}
+
+.pos-container {
+    width: 85%;
+    margin: 60px auto;
+    padding: 25px;
+    background-color: #f7fff7; /* Background putih kehijauan yang lebih cerah */
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15); /* Bayangan untuk efek mendalam */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2e7d32; /* Warna teks hijau gelap, cocok untuk hijau telur asin */
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Menambahkan spasi antar huruf */
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #2e7d32; /* Warna pembatas hijau telur asin */
+    margin: 25px auto;
+    width: 55%;
+}
+
+.special-offers {
+    margin-bottom: 45px;
+}
+
+.offer-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border: 2px dashed #aed581; /* Warna border hijau muda */
+    border-radius: 15px;
+    background-color: #e8f5e9; /* Background hijau telur asin lebih terang */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.offer-details h3 {
+    font-size: 26px;
+    color: #81c784; /* Warna teks hijau lembut */
+    margin-bottom: 12px;
+}
+
+.offer-details p {
+    font-size: 20px;
+    color: #444; /* Warna teks lebih gelap untuk kontras */
+    margin-bottom: 25px;
+}
+
+.offer-details button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #81c784; /* Warna tombol hijau telur asin */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.offer-details button:hover {
+    background-color: #4caf50; /* Warna hover hijau lebih intens */
+}
+
+.categories {
+    margin-bottom: 45px;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.category-card {
+    flex: 1 1 calc(22% - 20px);
+    background-color: #dcedc8; /* Warna hijau telur asin yang lebih lembut */
+    border: 2px solid #c5e1a5;
+    border-radius: 12px;
+    text-align: center;
+    padding: 22px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.12);
+    max-width: 260px;
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.category-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #33691e; /* Warna teks hijau gelap untuk kontras */
+}
+
+.category-card a {
+    text-decoration: none;
+    color: #2e7d32; /* Warna link hijau telur asin */
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 18px 30px rgba(0, 0, 0, 0.25);
+    border-color: #81c784; /* Border berubah warna saat hover */
+}
+
+.category-card:hover a {
+    color: #aed581; /* Warna link berubah saat hover */
+}
+
+.category-card:before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 55px;
+    background-color: #2e7d32; /* Garis warna hijau telur asin */
+    margin: 0 auto 22px;
+    border-radius: 3px;
+}

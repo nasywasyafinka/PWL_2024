@@ -31,7 +31,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return 'Nama : Nasywa Syafinka Widyamara | NIM: 2241760002';
+    return 'Profil Pengguna : Nasywa Syafinka Widyamara ';
 });
 
 Route::get('/user/{name}', function ($name){
@@ -56,16 +56,16 @@ Route::get('/user/{name?}', function ($name='John'){
 
 
 // prak 2
-Route::get('/hello', [WelcomeController::class,'hello']);
-Route::get('/', [WelcomeController::class,'index']);
-Route::get('/about', [WelcomeController::class,'about']);
-Route::get('/articles/{id}', [WelcomeController::class,'articles']);
-Route::get('modif/{id}', [WelcomeController::class, 'modif']);
+// Route::get('/hello', [WelcomeController::class,'hello']);
+// Route::get('/', [WelcomeController::class,'index']);
+// Route::get('/about', [WelcomeController::class,'about']);
+// Route::get('/articles/{id}', [WelcomeController::class,'articles']);
+// Route::get('modif/{id}', [WelcomeController::class, 'modif']);
 
-use App\Http\Controllers\PhotoController;
-Route::resource('photos', PhotoController::class);
-Route::resource('photos', PhotoController::class) ->only(['index','show']);
-Route::resource('photos', PhotoController::class) -> except(['create','store','update','destroy']);
+// use App\Http\Controllers\PhotoController;
+// Route::resource('photos', PhotoController::class);
+// Route::resource('photos', PhotoController::class) ->only(['index','show']);
+// Route::resource('photos', PhotoController::class) -> except(['create','store','update','destroy']);
 
 
 // prak 3
@@ -77,5 +77,11 @@ Route::resource('photos', PhotoController::class) -> except(['create','store','u
 //     return view('blog.hello', ['name' => 'Nasywa Syafinka']);
 // });
 
-Route::get('/greeting', [WelcomeController::class, 'greeting'] 
-);
+// Tugas Jobsheet 2
+Route::get('/home', [WelcomeController::class,'home']);
+Route::get('/category/food-beverage', [WelcomeController::class, 'food']);
+Route::get('/category/beauty-health', [WelcomeController::class, 'beauty']);
+Route::get('/category/home-care', [WelcomeController::class, 'homecare']);
+Route::get('/category/baby-kid', [WelcomeController::class, 'baby']);
+Route::get('/user', [WelcomeController::class,'user']);
+Route::get('/pos', [WelcomeController::class,'pos']);
